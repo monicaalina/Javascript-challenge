@@ -32,27 +32,27 @@ function handleClick() {
     var filteredData = tableData;
 
     if (Date) {
-        // If using the date as the first criterion, further filtered data is based on that chosen date
+        // If chosing the date as the first criterion, further filtered data is based on that chosen date
         var filteredData = filteredData.filter(Data => Data.datetime === Date);
     };
     
     if (City) {
-        // If using the city as the first criterion, further filtered data is based on that chosen city
+        // If chosing the city as the first criterion, further filtered data is based on that chosen city
         var filteredData = filteredData.filter(Data => Data.city === City);
     };
     
     if (State) {
-        // If using the state as the first criterion, further filtered data is based on that chosen state
+        // If chosing the state as the first criterion, further filtered data is based on that chosen state
         var filteredData = filteredData.filter(Data => Data.state === State);
     };
 
     if (Country) {
-        // If using the country as the first criterion, further filtered data is based on that chosen country
+        // If chosing the country as the first criterion, further filtered data is based on that chosen country
         var filteredData = filteredData.filter(Data => Data.country === Country);
     };
 
     if (Shape) {
-        // If using the shape as the first criterion, further filtered data is based on that chosen shape
+        // If chosing the shape as the first criterion, further filtered data is based on that chosen shape
         var filteredData = filteredData.filter(Data => Data.shape === Shape);
     };
 
