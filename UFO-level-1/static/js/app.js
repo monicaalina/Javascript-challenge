@@ -16,8 +16,9 @@ data.forEach((ufo) => {
 // Select the button
 var button = d3.select("#filter-btn");
 
-// Create event handlers 
+ 
 button.on("click", function(){
+    // Delete the previous selection
     tbody.html("");
   
   // Select the input element and get the raw HTML node
@@ -41,5 +42,6 @@ button.on("click", function(){
             cell.text(value);
         });
     });
+    // Prevent the page from refreshing
     d3.event.preventDefault();
 });

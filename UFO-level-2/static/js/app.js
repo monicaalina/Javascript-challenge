@@ -18,7 +18,7 @@ function Table(data){
 };
 
 
-// Create event handlers 
+ 
 function handleClick() {
 
      // Get the value property of the input element
