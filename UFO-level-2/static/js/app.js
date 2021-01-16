@@ -28,32 +28,32 @@ function handleClick() {
     var Country = d3.select("#country").property("value");
     var Shape = d3.select("#shape").property("value");
 
-
+    // Create a new variable, for filter purpose
     var filteredData = tableData;
 
     if (Date) {
-        // Rebuild the table using the filter data and produce on the page
-        var filteredData = filteredData.filter(info => info.datetime === Date);
+        // If using the date as the first criterion, further filtered data is based on that chosen date
+        var filteredData = filteredData.filter(Data => Data.datetime === Date);
     };
     
     if (City) {
-        // Rebuild the table using the filter data and produce on the page
-        var filteredData = filteredData.filter(info => info.city === City);
+        // If using the city as the first criterion, further filtered data is based on that chosen city
+        var filteredData = filteredData.filter(Data => Data.city === City);
     };
     
     if (State) {
-        // Rebuild the table using the filter data and produce on the page
-        var filteredData = filteredData.filter(info => info.state === State);
+        // If using the state as the first criterion, further filtered data is based on that chosen state
+        var filteredData = filteredData.filter(Data => Data.state === State);
     };
 
     if (Country) {
-        // Rebuild the table using the filter data and produce on the page
-        var filteredData = filteredData.filter(info => info.country === Country);
+        // If using the country as the first criterion, further filtered data is based on that chosen country
+        var filteredData = filteredData.filter(Data => Data.country === Country);
     };
 
     if (Shape) {
-        // Rebuild the table using the filter data and produce on the page
-        var filteredData = filteredData.filter(info => info.shape === Shape);
+        // If using the shape as the first criterion, further filtered data is based on that chosen shape
+        var filteredData = filteredData.filter(Data => Data.shape === Shape);
     };
 
     Table(filteredData)
